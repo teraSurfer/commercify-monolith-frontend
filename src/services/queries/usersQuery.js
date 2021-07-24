@@ -13,6 +13,18 @@ const usersQuery = gql`
   }
 `;
 
+const registerUserMutation = gql`
+  mutation RegUser($user: CreateUserInput!) {
+    registerUser(user: $user) {
+      uid,
+      firstName,
+      lastName,
+      role
+    }
+  }
+`;
+
 export {
-    usersQuery
+    usersQuery,
+    registerUserMutation
 }

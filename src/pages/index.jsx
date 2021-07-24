@@ -3,6 +3,7 @@ import {Box} from '@chakra-ui/react';
 import {Router} from "@reach/router";
 import Navbar from 'src/components/navbar';
 import Users from './users';
+import Register from './register';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Router>
         <Users path="/users" />
+        <Register path="/register" />
       </Router>
     </Box>
   );

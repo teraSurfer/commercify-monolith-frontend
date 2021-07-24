@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, Spinner, Stack } from "@chakra-ui/react";
+import { Container, Flex, Heading, Spinner, Stack } from "@chakra-ui/react";
 import { useQuery } from "@apollo/client";
 import { usersQuery } from "src/services/queries/usersQuery";
 import UserDetail from "src/components/user-detail";
